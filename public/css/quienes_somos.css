@@ -1,0 +1,43 @@
+.team-members{
+    margin-top: 50px;
+}
+.features-list {
+    display: flex; /* Alinea los elementos en fila */
+    justify-content: space-between; /* Separa los elementos uniformemente */
+    flex-wrap: wrap; /* Permite ajustar a una nueva línea si es necesario */
+    padding: 0; /* Elimina el padding por defecto de la lista */
+    list-style: none; /* Elimina los puntos de la lista */
+    margin: 20px 0;
+}
+
+.features-list li {
+    flex: 1; /* Asegura que los elementos tengan el mismo tamaño */
+    margin: 0 10px; /* Espaciado horizontal entre los elementos */
+    padding: 15px; /* Espaciado interno */
+    background-color: #f8f9fa; /* Fondo claro */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    text-align: center; /* Centra el contenido dentro del elemento */
+    transform: translateY(0); /* Posición inicial */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+.features-list li:hover {
+    transform: translateY(-10px) scale(1.05); /* Efecto de acercamiento y movimiento hacia arriba */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el cursor */
+}
+
+.feature-icon {
+    width: 70px; /* Tamaño de las imágenes */
+    height: auto; /* Mantén la proporción */
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+    display: block; /* Asegura que la imagen esté centrada */
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease; /* Suaviza el efecto de acercamiento */
+}
+
+.features-list li:hover .feature-icon {
+    transform: scale(1.2); /* Acercamiento de la imagen */
+}
+

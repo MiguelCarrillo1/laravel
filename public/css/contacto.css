@@ -1,0 +1,86 @@
+.contact-section {
+    padding: 40px 20px;
+    margin-top: 20px; /* Aquí se añade el margen superior */
+    background-color: none;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: none;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.contact-container h2 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #000000;
+    
+    text-align: center;
+}
+.contact-container p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+
+.contact-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    
+}
+
+.contact-container input,
+.contact-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #f1f1f1;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+}
+
+.contact-container input {
+    border-radius: 1px;
+    border-color: #27496D;
+}
+
+.contact-container textarea {
+    border-radius: 1px;
+    border-color: #27496D;
+}
+
+.contact-container button {
+    background-color: #2C4F78;
+    color: #fff;
+    border: none;
+    padding: 10px 256px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: block; /* Asegura que el botón ocupe todo el ancho posible */
+    margin: 10px auto 0; /* Acentúa la centrado verticalmente y horizontalmente */
+    box-shadow: var(--box-shadow);
+    font-size: 1rem;
+}
+
+.contact-container button:hover {
+    background-color: #5790AB;
+    box-shadow: #333;
+}
+.text-center{
+    text-align: center;
+    margin-top: 50px;
+}
+.contact-info{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    list-style: none;
+    margin-top: 60px;
+
+}

@@ -1,0 +1,413 @@
+/* INTERFAZ */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #27496D;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.navbar {
+    background-color: #006DA4;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+}
+
+
+nav {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+nav .navbar-brand {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s, transform 0.4s;
+
+}
+
+nav .navbar-brand:hover {
+    transform: scale(1.04);
+}
+
+/*Opciones del navbar*/
+#navbarNav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item .nav-link {
+    margin: 2px;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #f4f4f9;
+}
+
+.navbar-nav .nav-item .nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar-nav .nav-item .usericon i {
+    font-size: 29px;
+}
+
+.navbar-nav .nav-item.dropdown .nav-link {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.navbar-nav .nav-item.dropdown .nav-link:hover {
+    transform: scale(1.04);
+}
+
+.navbar-nav .nav-item.dropdown .nav-link::after {
+    content: none;
+}
+
+.navbar-nav .nav-item.dropdown .dropdown-menu {
+    background-color: #27496D;
+    border-radius: 5px;
+    padding: 5px 0;
+}
+
+.navbar-nav .nav-item.dropdown .dropdown-item {
+    color: white;
+    font-weight: normal;
+    padding: 7px 5px;
+    text-align: center;
+}
+
+.navbar-nav .nav-item.dropdown .dropdown-item:hover {
+    background-color: #006DA4;
+    color: #f4f4f9;
+}
+
+.navbar-nav .nav-item.dropdown .dropdown-menu {
+    margin-left: -175%;
+}
+
+/* AJUSTE PARA PANTALLAS GRANDES */
+@media (min-width: 993px) {
+    .navbar-nav {
+        margin-left: auto;
+    }
+
+
+    .navbar-nav .nav-item.dropdown {
+        margin-right: 5px;
+    }
+}
+
+
+h1, h2 {
+    color: #00171F;
+
+
+}
+h2{
+    text-align: center;
+    font-size: 2.5rem
+
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.text-center{
+    text-align: center;
+    margin-top: 30px;
+}
+section {
+    text-align: center; /* Centra el título */
+    margin: 20px 0;
+}
+
+
+
+
+text-center {
+    text-align: center; /* Centra el título */
+    margin-top:90px;
+    margin-bottom: 30px;
+}
+
+.features-list {
+    display: flex; /* Alinea los elementos en fila */
+    justify-content: space-between; /* Separa los elementos uniformemente */
+    flex-wrap: wrap; /* Permite ajustar a una nueva línea si es necesario */
+    padding: 0; /* Elimina el padding por defecto de la lista */
+    list-style: none; /* Elimina los puntos de la lista */
+    margin: 20px 0;
+}
+
+.features-list li {
+    flex: 1; /* Asegura que los elementos tengan el mismo tamaño */
+    margin: 0 10px; /* Espaciado horizontal entre los elementos */
+    padding: 15px; /* Espaciado interno */
+    background-color: #f8f9fa; /* Fondo claro */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    text-align: center; /* Centra el contenido dentro del elemento */
+    transform: translateY(0); /* Posición inicial */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+.features-list li:hover {
+    transform: translateY(-10px) scale(1.05); /* Efecto de acercamiento y movimiento hacia arriba */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el cursor */
+}
+
+.feature-icon {
+    width: 60px; /* Tamaño de las imágenes */
+    height: auto; /* Mantén la proporción */
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+    display: block; /* Asegura que la imagen esté centrada */
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease; /* Suaviza el efecto de acercamiento */
+}
+
+.features-list li:hover .feature-icon {
+    transform: scale(1.2); /* Acercamiento de la imagen */
+}
+
+
+.image-container {
+    display: flex;
+    min-height: 95vh;
+    background: url(../imagenes/banner.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/*Control de notificaciones*/
+.notif-icon {
+    position: relative;
+    color: white;
+}
+#notif-icon .nav-link:after {
+    content: none;
+}
+
+
+#notif-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 3px 7px;
+}
+
+.notif-dropdown {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+    background-color: #555;
+}
+
+.notif-dropdown.show {
+    display: block;
+}
+
+.notif-dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.notif-dropdown li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.notif-dropdown li a:hover {
+    background-color: #444;
+}
+
+
+.navbar .nav-link i {
+    margin-right: 8px;
+}
+
+@media (max-width: 992px) {
+    .notif-icon {
+        display: inline-block;
+        margin-left: auto;
+    }
+    .notif-dropdown {
+        top: 30px;
+        right: 10px;
+    }
+}
+
+
+/* Sección de formularios */
+section {
+    margin-top: 80px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+section h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.row label {
+    margin-bottom: 8px;
+}
+
+.row input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.botones {
+    text-align: center;
+}
+
+.btn{
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    height: 40px;
+    width: 125px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+    background-size: 300%;
+    transition: 0.9s;
+    margin: 5px;
+}
+
+#boton1 {
+    background-color: #2C4F78;
+    color: #E5E5E5FF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#boton1:hover {
+    background-color: #5790AB;
+    box-shadow: 0 0 2px #5790AB, 0 0 4px #5790AB, 0 0 12px #5790AB;
+}
+
+
+#boton2 {
+    background-color: #F44336;
+    color: #E5E5E5FF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+#boton2:hover {
+    background-color: #F44336;
+    box-shadow: 0 0 2px #b91004, 0 0 4px #b91004, 0 0 12px #b91004;
+}
+
+main {
+    margin: 20px;
+}
+
+main p {
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #27496D;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+}
+.title {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color:rgb(13, 44, 199);
+    transform: scale(1.2);
+}   

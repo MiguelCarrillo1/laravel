@@ -1,0 +1,195 @@
+/*Cuerpo*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/*Contenedores de los formularios*/
+.container {
+    margin-top: 80px;
+}
+
+.container2 {
+    padding: 30px;
+}
+
+/*Titulo*/
+.login-logo a {
+    font-size: 37px;
+}
+
+.login-logo b {
+    font-weight: bold;
+}
+
+/*Cuerpo del formulario*/
+.login-box-body {
+    border-radius: 10px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+/*Titulo indicativo del formulario*/
+.login-box-msg {
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+}
+
+/*Formulario*/
+form {
+    padding: 7px;
+}
+
+/*Labels indicativos*/
+form label{
+    font-family: Arial,sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+
+}
+
+.form-group {
+    position: relative;
+    margin: 3px;
+}
+
+/*Cajas para los datos*/
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.form-group select {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.form-group input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/*Boton para ver/ocultar contraseña*/
+.form-group .password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 75%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+    color: #444;
+    opacity: 1;
+    transition: opacity 0.3s ease, color 0.3s ease;
+    z-index: 10;
+}
+
+.form-group .password-toggle:hover {
+    color: #666;
+}
+
+.form-group .bx-show {
+    color: #444;
+}
+
+.form-group .bx-hide {
+    color: #666;
+}
+
+/*Enlace para redirigir registrar/iniciar sesion*/
+.enlace a {
+    padding: 10px;
+}
+
+.enlace a:hover {
+    text-decoration: underline;
+}
+
+/*Boton de inicio de sesion*/
+.boton1 button {
+    width: 100%;
+    background-color: #2C4F78;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 7px;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 10px;
+}
+
+.boton1 button:hover {
+    background-color: #5790AB;
+    transform: scale(1.05);
+}
+
+.boton1 button:active {
+    transform: scale(0.98);
+}
+
+/*Boton de registro de usuarios*/
+.boton2 button {
+    width: 100%;
+    background-color: #24A13C;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 7px;
+    font-family: Arial, sans-serif;
+    color: white;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 10px;
+}
+
+.boton2 button:hover {
+    background-color: #028015;
+    transform: scale(1.05);
+}
+
+.boton2 button:active {
+    transform: scale(0.98);
+}
+
+/*Diseño del modal*/
+.modal-content {
+    border-radius: 5px;
+}
+
+.modal-footer {
+    text-align: center;
+}
+
+.modal-footer button {
+    background-color: #006DA4;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.modal-footer button:hover {
+    background-color: #0d507d;
+}
+
+.errors ul {
+    color: red;
+}
+
+.errors li {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
